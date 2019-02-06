@@ -46,9 +46,6 @@ data "aws_iam_policy_document" "ecr" {
 
     actions = [
       "ecr:GetAuthorizationToken",
-      "ecr:GetDownloadUrlForLayer",
-      "ecr:BatchGetImage",
-      "ecr:BatchCheckLayerAvailability",
     ]
 
     resources = ["*"]
