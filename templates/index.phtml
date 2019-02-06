@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>MongoDB Atlas - Example App</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h2>MongoDB Atlas - Example App</h2>
+        <?php if (!$users->isEmpty()): ?>
+          <?php foreach($users as $user): ?>
+              <p> <?= $user->firstname ?> <?= $user->lastname ?> is here!</p>
+          <?php endforeach; ?>
+        <?php else: ?>
+            <p> No lastname given</p>
+        <?php endif; ?>
+    </body>
+</html>

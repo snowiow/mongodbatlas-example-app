@@ -1,0 +1,31 @@
+{
+    "name": "snowiow/mongodbatlas-example-app",
+    "description": "An example application to work with mongodb atlas",
+    "homepage": "https://github.com/snowiow/mongodbatlas-example-app",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Patzwahl",
+            "email": "marcel.patzwahl@posteo.de",
+            "homepage": "https://snow-dev.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "slim/slim": "^3.1",
+        "slim/php-view": "^2.0",
+        "jenssegers/mongodb": "^3.4",
+        "vlucas/phpdotenv": "^3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "ExampleApp\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout" : 0
+    },
+    "scripts": {
+        "start": "php -S localhost:8080 -t public"
+    }
+}
